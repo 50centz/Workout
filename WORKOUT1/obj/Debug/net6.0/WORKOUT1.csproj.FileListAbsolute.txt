@@ -1,0 +1,15 @@
+C:\Users\e.fedorov\Desktop\Workout\WORKOUT1\bin\Debug\net6.0\WORKOUT1.exe
+C:\Users\e.fedorov\Desktop\Workout\WORKOUT1\bin\Debug\net6.0\WORKOUT1.deps.json
+C:\Users\e.fedorov\Desktop\Workout\WORKOUT1\bin\Debug\net6.0\WORKOUT1.runtimeconfig.json
+C:\Users\e.fedorov\Desktop\Workout\WORKOUT1\bin\Debug\net6.0\WORKOUT1.dll
+C:\Users\e.fedorov\Desktop\Workout\WORKOUT1\bin\Debug\net6.0\WORKOUT1.pdb
+C:\Users\e.fedorov\Desktop\Workout\WORKOUT1\obj\Debug\net6.0\WORKOUT1.csproj.AssemblyReference.cache
+C:\Users\e.fedorov\Desktop\Workout\WORKOUT1\obj\Debug\net6.0\WORKOUT1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\e.fedorov\Desktop\Workout\WORKOUT1\obj\Debug\net6.0\WORKOUT1.AssemblyInfoInputs.cache
+C:\Users\e.fedorov\Desktop\Workout\WORKOUT1\obj\Debug\net6.0\WORKOUT1.AssemblyInfo.cs
+C:\Users\e.fedorov\Desktop\Workout\WORKOUT1\obj\Debug\net6.0\WORKOUT1.csproj.CoreCompileInputs.cache
+C:\Users\e.fedorov\Desktop\Workout\WORKOUT1\obj\Debug\net6.0\WORKOUT1.dll
+C:\Users\e.fedorov\Desktop\Workout\WORKOUT1\obj\Debug\net6.0\refint\WORKOUT1.dll
+C:\Users\e.fedorov\Desktop\Workout\WORKOUT1\obj\Debug\net6.0\WORKOUT1.pdb
+C:\Users\e.fedorov\Desktop\Workout\WORKOUT1\obj\Debug\net6.0\WORKOUT1.genruntimeconfig.cache
+C:\Users\e.fedorov\Desktop\Workout\WORKOUT1\obj\Debug\net6.0\ref\WORKOUT1.dll
