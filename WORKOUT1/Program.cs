@@ -1,4 +1,4 @@
-﻿
+﻿/*
 // Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
 
 int[,] Create2dArray()
@@ -42,9 +42,8 @@ int[,] ArrangeItemsInDescendingOrder(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            for (int r = 0, z = 1; z < array.GetLength(1); z++, r++)
+            for (int z = 1, r = 0; z < array.GetLength(1); z++, r++)
             {
-
                 if (array[i, r] < array[i, z])
                 {
                     int temp = array[i, r];
@@ -52,20 +51,21 @@ int[,] ArrangeItemsInDescendingOrder(int[,] array)
                     array[i, z] = temp;
                 }
             }
-
         }
     }
     return array;
 }
 
 int[,] newArray = Create2dArray();
+Console.WriteLine();
 Show2dArray(newArray);
 Console.WriteLine();
-int[,] myArr = ArrangeItemsInDescendingOrder(newArray);
-Show2dArray(myArr);
+ArrangeItemsInDescendingOrder(newArray);
+Show2dArray(newArray);
+*/
 
 
-/*
+
 // Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
 
 int[,] Create2dArray()
@@ -103,58 +103,66 @@ void Show2dArray(int[,] array)
     }
 }
 
-
-int TheRowWithTheSmallestSumOfElements(int[,] array)
+void ShowArray(int[] array)
 {
-    int sum = 0;
-    int sumMin = 100;
-    int count = 0;
-
     for (int i = 0; i < array.GetLength(0); i++)
     {
-
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            sum += array[i, j];
-        }
-        if (sumMin >= sum)
-        {
-            sumMin = sum;
-            count = i;
-        }
-        sum = 0;
+        Console.Write(array[i] + " ");
     }
-    return count + 1;
 }
 
-int TheRowWithTheSmallestSumOfElementsSum(int[,] array)
+
+int[] TheRowWithTheSmallestSumOfElements(int[,] array)
 {
     int sum = 0;
-    int sumMin = 100;
 
+    int[] myArray = new int[array.GetLength(0)];
 
     for (int i = 0; i < array.GetLength(0); i++)
     {
-
         for (int j = 0; j < array.GetLength(1); j++)
         {
             sum += array[i, j];
         }
-        if (sumMin >= sum) sumMin = sum;
+        myArray[i] = sum;
         sum = 0;
     }
-    return sumMin;
+    return myArray;
+}
+
+int[] TheRowWithTheSmallestSumOfElementsSum(int[] array)
+{
+    int[] myArray = new int[2];
+    int min = array[0];
+    for (int i = 0; i < array.Length; i++)
+    {
+        for (int r = 0; r < array.Length; r++)
+        {
+            if (array[r] < min)
+            {
+                min = array[r];
+                myArray[1] = r + 1;
+            }
+        }
+        myArray[0] = min;
+    }
+    return myArray;
 }
 
 int[,] myArray = Create2dArray();
 Console.WriteLine();
 Show2dArray(myArray);
 Console.WriteLine();
-int rows = TheRowWithTheSmallestSumOfElements(myArray);
-int minSum = TheRowWithTheSmallestSumOfElementsSum(myArray);
+int[] newArray = TheRowWithTheSmallestSumOfElements(myArray);
+Console.WriteLine();
+ShowArray(newArray);
+Console.WriteLine();
+int[] sumArray = TheRowWithTheSmallestSumOfElementsSum(newArray);
+ShowArray(sumArray);
 
-Console.Write($"{minSum} and {rows}");
-*/
+
+
+
 
 
 
