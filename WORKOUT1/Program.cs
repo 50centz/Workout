@@ -1,4 +1,4 @@
-﻿/*
+﻿
 // Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
 
 int[,] Create2dArray()
@@ -35,8 +35,8 @@ void Show2dArray(int[,] array)
         Console.WriteLine();
     }
 }
-
-int[,] ArrangeItemsInDescendingOrder(int[,] array)
+/*
+int[,] ArrangeItemsInDescendingOrder(int[,] array) // первый вариант сортировки
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -55,6 +55,27 @@ int[,] ArrangeItemsInDescendingOrder(int[,] array)
     }
     return array;
 }
+*/
+
+int[,] ArrangeItemsInDescendingOrder(int[,] array) // Второй вариант сортировки
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0, r = 0; j < array.GetLength(1); j++, r++)
+        {
+            for (int z = 0; z < array.GetLength(1); z++)
+            {
+                if (array[i, r] > array[i, z])
+                {
+                    int temp = array[i, r];
+                    array[i, r] = array[i, z];
+                    array[i, z] = temp;
+                }
+            }
+        }
+    }
+    return array;
+}
 
 int[,] newArray = Create2dArray();
 Console.WriteLine();
@@ -62,10 +83,10 @@ Show2dArray(newArray);
 Console.WriteLine();
 ArrangeItemsInDescendingOrder(newArray);
 Show2dArray(newArray);
-*/
 
 
 
+/*
 // Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
 
 int[,] Create2dArray()
@@ -159,7 +180,7 @@ ShowArray(newArray);
 Console.WriteLine();
 int[] sumArray = TheRowWithTheSmallestSumOfElementsSum(newArray);
 ShowArray(sumArray);
-
+*/
 
 
 
